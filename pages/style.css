@@ -1,0 +1,129 @@
+
+
+/* background setup */
+:root {
+  
+    --black: #f3ebeb;
+    --black-light: #ffff;
+    --black-dark: #000000;
+
+    --heading-color: var(--black-light);
+    --paragraph-color: var(--black);
+
+
+    --transparent-black-bg: rgba(0, 0, 0, 0.6);
+
+    --sky-blue: blue;
+    --dark-sky-blue: #5d9cec;
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    background-image: url('https://ik.imagekit.io/ikmedia/backlit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+
+}
+
+
+/* index.html  */
+
+.main-container{
+    background-color: var(--transparent-black-bg);
+    height: 520px;
+    width: 420px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+.content{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px
+}
+
+.heading{
+    color: var(--heading-color);
+    font-size: 30px;
+    font-weight: 600;    
+}
+
+.form-section
+{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    color: var(--paragraph-color);
+    justify-content: space-evenly;
+}
+.input-section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    outline: none;
+}
+
+.form-label{
+    color: var(--paragraph-color);
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-control{
+    outline: none;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.end-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-btn, .login-link {
+    background-color: var(--sky-blue);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--dark-sky-blue);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-link:hover {
+    color: var(--dark-sky-blue);
+}
+.message{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+

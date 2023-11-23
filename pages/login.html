@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login-page</title>
+  </head>
+
+  <body>
+    <section class="main-container">
+      <div class="content">
+        <h2 class="heading">Login Form</h2>
+
+        <form method="post" action="/login" class="form-section">
+          <div class="input-section">
+            <label class="form-label" for="form3Example1">Username</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="type your name here"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example3">Email address</label>
+            <input
+              type="email"
+              id="form3Example3"
+              name="email"
+              class="form-control"
+              placeholder="john@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input
+              type="password"
+              id="form3Example4"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-items: center;
+              justify-content: space-between;
+              margin-top: 20px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <input type="checkbox" />
+              <label for="" class="message">I accept terms and policyes</label>
+            </div>
+            <p class="message">Please first register your self</p>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 0;
+            "
+          >
+
+          <button type="submit" class="submit-btn">Login</button>
+            <a
+              href="index.html"
+              class="submit-btn"
+              style="margin-right: 60px"
+            >
+              Register
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+
+      function redirectToSignUp() {
+        // Redirect to the login page
+        window.location.href = "index.html";
+      }
+      </script>
+  </body>
+</html>

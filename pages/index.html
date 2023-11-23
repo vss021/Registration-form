@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration form</title>
+  </head>
+
+  <body>
+    <section class="main-container">
+
+      <div class="content">
+        <h2 class="heading">Registration Form</h2>
+
+        <form method="post" action="/register" class="form-section">
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example1">Username</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="type your name here"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example3">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="abc@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="input-section">
+            <label class="form-label" for="form3Example4"
+              >Confirm Password</label
+            >
+            <input
+              type="confirm-password"
+              id="confirm-password"
+              name="confirm-password"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="info">
+            <p class="message">Please first register your self</p>
+            <p class="message">I am allready register </p>
+
+          </div>
+
+          <div class="end-form">
+            <button type="submit" class="submit-btn">Register</button>
+            
+              <a href="login.html" class="login-link" onclick="redirectToLogin()">Login</a>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <script>
+       function redirectToLogin() {
+      // You can perform any backend logic here before redirecting if needed
+      // Redirect to the login page
+      window.location.href = "login.html";
+      } 
+    </script>
+
+  </body>
+
+</html>
