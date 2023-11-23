@@ -56,13 +56,13 @@ app.get("/", (req, res) => {
 
 app.post("/register", async(req, res)=>{
     try{
-        const {name, email, password} = req.body;
+        const {name, email, password, confirm_password} = req.body;
 
         // making obj
 
         const existingUser = await Registration.findOne({email});
 
-        if(!existingUser){
+        if(!existingUser && password === confirm_password){
 
           const userData = new Registration({
             name,
